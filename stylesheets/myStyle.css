@@ -23,6 +23,9 @@ a {
   box-shadow: 0 1px 30px 0 #333;
 }
 .header-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
   float: left;
   width: 231px;
   height: 38px;
@@ -383,4 +386,99 @@ a {
 }
 .footer-menus span {
   padding: 0 10px;
+}
+/* 文章列表 */
+.articles-menu {
+  height: 72px;
+  color: #fff;
+  background: #0086a3;
+}
+.articles-menu h3 {
+  padding: 12px 80px;
+}
+.articles-menu h3 aside {
+  font-size: 14px;
+}
+.articles-area {
+  width: 1000px;
+  margin: 0 auto;
+}
+.articles-area .articles-box {
+  position: relative;
+  padding: 24px 48px 0 190px;
+  border-bottom: 1px solid #eee;
+  -webkit-transition: .3s;
+          transition: .3s;
+}
+.articles-area .articles-box:hover {
+  background: #f7fcfb;
+}
+.articles-area .articles-time {
+  position: absolute;
+  top: 24px;
+  left: 72px;
+  width: 100px;
+  height: 100px;
+  padding-top: 28px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0086a3;
+  text-align: center;
+  border: 4px solid #ccc;
+  border-radius: 50%;
+}
+.articles-area .articles-time .year {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  font-size: 16px;
+  color: #ccc;
+}
+.articles-area .articles-time .month {
+  padding-right: 4px;
+}
+.articles-area .articles-time .month:after {
+  padding-left: 4px;
+  content: "-";
+}
+.articles-area .articles-author {
+  font-size: 14px;
+  color: #ccc;
+}
+.articles-area .articles-author:before {
+  padding-right: 8px;
+  color: #0086a3;
+  content: "by";
+}
+.articles-area .articles-intro {
+  height: 64px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #999;
+  word-wrap: break-word;
+}
+.articles-area .articles-more {
+  position: relative;
+  width: 120px;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  color: #0086a3;
+  cursor: pointer;
+}
+.articles-area .articles-more:before {
+  position: absolute;
+  bottom: 0;
+  left: -14px;
+  width: 0;
+  height: 2px;
+  content: "";
+  background: #0086a3;
+  -webkit-transition: .4s;
+          transition: .4s;
+}
+.articles-area .articles-more:hover:before {
+  width: 100%;
 }
