@@ -1,5 +1,8 @@
 /* @baseColor:#f07100; */
 /* @baseColor:#C83639;  */
+html {
+  height: 100%;
+}
 body,
 h1,
 h2,
@@ -10,6 +13,9 @@ h6 {
   font-family: "Microsoft YaHei UI", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
 }
 body {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 116px;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -365,6 +371,12 @@ a {
   background: url(../images/team-4.png) no-repeat top center;
 }
 /* footer */
+.footer-area {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 116px;
+}
 .footer {
   padding: 20px 0;
   font-size: 14px;
@@ -452,7 +464,7 @@ a {
   content: "by";
 }
 .articles-area .articles-intro {
-  height: 64px;
+  height: 42px;
   overflow: hidden;
   font-size: 14px;
   color: #999;
@@ -461,7 +473,7 @@ a {
 .articles-area .articles-more {
   position: relative;
   width: 120px;
-  margin: 10px 0;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -481,4 +493,100 @@ a {
 }
 .articles-area .articles-more:hover:before {
   width: 100%;
+}
+/* 文章详细 */
+.detail-area {
+  width: 1000px;
+  margin: 0 auto;
+}
+.detail-title {
+  padding-bottom: 12px;
+  margin: 40px 0;
+  font-weight: 100;
+  color: #555;
+  text-align: center;
+  border-bottom: 1px solid #777;
+}
+.detail-title aside {
+  display: inline;
+  padding-left: 20px;
+  font-size: 12px;
+}
+.detail-title aside span {
+  color: #0086a3;
+}
+.detail-content {
+  padding: 0 24px;
+  line-height: 1.7;
+}
+.detail-content:first-letter {
+  font-size: 2em;
+  color: #0086a3;
+}
+.detail-content p {
+  margin: 8px 0;
+  text-indent: 2em;
+}
+.detail-toolbar {
+  margin-top: 40px;
+  font-size: 12px;
+  border-top: 1px solid #777;
+}
+.detail-toolbar-item {
+  width: 100%;
+  text-align: right;
+}
+.detail-toolbar-item a {
+  color: #0086a3;
+  text-decoration: none;
+}
+.detail-toolbar-item a:hover {
+  text-decoration: underline;
+}
+/* 关于我们 */
+.about-title {
+  padding: 10px;
+  margin: 30px 0;
+  font-weight: 100;
+  border-bottom: 1px solid #777;
+}
+.about-p {
+  line-height: 1.7;
+  text-indent: 2em;
+}
+.about-p:first-letter {
+  font-size: 2em;
+  color: #0086a3;
+}
+.about-bg {
+  height: 600px;
+  margin: 30px 0 53px;
+  background: url('../images/photos/about-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.about-phone {
+  position: absolute;
+  bottom: -121px;
+  left: 20px;
+  width: 359px;
+  height: 676px;
+  background: url(../images/photos/iphone-skeleton.png) no-repeat;
+}
+.about-code {
+  position: absolute;
+  top: 115px;
+  left: 56px;
+  width: 248px;
+  height: 446px;
+  background: #fff url(../images/photos/code.jpg) no-repeat center 68px;
+}
+.about-info {
+  position: absolute;
+  top: 177px;
+  right: 40px;
+  font-size: 18px;
+  color: #fff;
+}
+.about-info li {
+  margin: 10px;
 }

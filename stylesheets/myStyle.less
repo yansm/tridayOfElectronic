@@ -1,9 +1,9 @@
 /* @baseColor:#f07100; */
 	@baseColor:#0086A3;
  /* @baseColor:#C83639;  */
-
+html{height:100%;}
 body,h1,h2,h3,h4,h5,h6{font-family: "Microsoft YaHei UI","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif}
-body{font-size: 16px;line-height:1.6;}
+body{font-size: 16px;line-height:1.6;position:relative;min-height:100%;padding-bottom:116px;}
 a{text-decoration:none;}
 .header{
 	height:68px;
@@ -22,7 +22,7 @@ a{text-decoration:none;}
 			width:100%;
 		}
 	}
-}
+} 
 .slider{
 	height:340px;background:@baseColor;position:relative;
 }
@@ -88,7 +88,6 @@ a{text-decoration:none;}
 		}
 		.slider-content{
 			h3,p,a{opacity:1;transform:translateX(0);}
-			
 		}
 	}
 }
@@ -197,6 +196,9 @@ a{text-decoration:none;}
 	background:url(../images/team-4.png) no-repeat top center;
 }
 /* footer */
+.footer-area{
+	height:116px;position:absolute;width:100%;bottom:0;
+}
 .footer{
 	background:#1b1b1b;padding:20px 0;color:#707070;font-size:14px;
 }
@@ -240,14 +242,14 @@ a{text-decoration:none;}
 	.articles-author{
 		font-size: 14px;color:#ccc;
 		&:before{
-			content:"by"; color:@baseColor;padding-right:8px;
-		}
+			content:"by"; color:@baseColor;padding-right:8px; 
+		} 
 	}
 	.articles-intro{
-		color:#999;height:64px;overflow:hidden;word-wrap:break-word;font-size:14px;
+		color:#999;height:42px;overflow:hidden;word-wrap:break-word;font-size:14px;
 	}
 	.articles-more{
-		font-size:18px;color:@baseColor;font-weight:700;line-height:2;cursor:pointer;width:120px;margin:10px 0;position:relative;
+		font-size:18px;color:@baseColor;font-weight:700;line-height:2;cursor:pointer;width:120px;margin-bottom:10px;position:relative;
 		&:before{
 			position:absolute;content:"";width:0;height:2px;bottom:0;left:-14px;background:@baseColor;transition:.4s;
 		}
@@ -255,4 +257,56 @@ a{text-decoration:none;}
 			width:100%;
 		}
 	}
+}
+/* 文章详细 */
+.detail-area{
+	width:1000px;margin:0 auto;
+}
+.detail-title{
+	text-align:center;font-weight:100;border-bottom:1px solid #777;color:#555;padding-bottom:12px;margin:40px 0;
+	aside{
+		display:inline;font-size:12px;padding-left:20px;
+		span{color:@baseColor;}
+	}
+}
+.detail-content{
+	&:first-letter{color:@baseColor;font-size:2em;}
+	padding:0 24px;line-height:1.7;
+	p{margin:8px 0;text-indent:2em;}
+}
+.detail-toolbar{
+	margin-top:40px;border-top:1px solid #777;font-size:12px;
+}
+.detail-toolbar-item{text-align:right;width:100%;
+	a{text-decoration:none;color:@baseColor;
+		&:hover{
+			text-decoration:underline;
+		}
+	}
+}
+/* 关于我们 */
+.about-area{
+}
+.about-title{
+	font-weight:100;padding:10px;margin:30px 0;border-bottom:1px solid #777;
+}
+.about-p{
+	&:first-letter{color:@baseColor;font-size:2em;}
+	line-height:1.7;text-indent:2em;
+}
+.about-bg{
+	background: url('../images/photos/about-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height:600px;margin:30px 0 53px;
+}
+.about-phone{
+	position:absolute;bottom:-121px;left:20px;width:359px;height:676px;
+	background:url(../images/photos/iphone-skeleton.png) no-repeat;
+}
+.about-code{
+	width:248px;height:446px;position:absolute;top:115px;left:56px;background:#fff url(../images/photos/code.jpg) no-repeat center 68px ;
+}
+.about-info{
+	position:absolute;color:#fff;font-size:18px;top:177px;right:40px;
+	li{margin:10px;}
 }
