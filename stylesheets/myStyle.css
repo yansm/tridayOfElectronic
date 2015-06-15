@@ -590,3 +590,53 @@ a {
 .about-info li {
   margin: 10px;
 }
+/* 项目展示 */
+.product-item {
+  padding: 8px 20px 56px;
+}
+.product-item > div {
+  float: left;
+}
+.product-info {
+  width: 642px;
+  height: 250px;
+  padding: 12px;
+}
+.product-head {
+  font-size: 2em;
+  color: #0086a3;
+  text-align: center;
+}
+.product-content {
+  line-height: 1.7;
+  text-indent: 2em;
+}
+.product-photo {
+  position: relative;
+  width: 398px;
+  height: 250px;
+  padding: 10px 0;
+  overflow: hidden;
+}
+.product-photo:before,
+.product-photo:after {
+  position: absolute;
+  top: 0;
+  right: -50%;
+  z-index: 2;
+  width: 50%;
+  height: 100%;
+  content: "";
+  background: red;
+  border-radius: 8px/125px;
+  box-shadow: 0 0 18px #333;
+}
+.product-photo:after {
+  left: -50%;
+}
+.product-photo .flickity-prev-next-button {
+  display: none;
+}
+.product-photo .flickity-page-dots {
+  bottom: -15px;
+}
