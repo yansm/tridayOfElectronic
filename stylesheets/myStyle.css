@@ -617,7 +617,30 @@ a {
 }
 .product-content {
   line-height: 1.7;
-  text-indent: 2em;
+}
+.product-content p {
+  margin: 5px;
+}
+.product-content p span {
+  display: inline-block;
+  width: 100px;
+  padding-right: 10px;
+  margin-right: 10px;
+  text-align: right;
+  border-right: 1px solid #0086a3;
+}
+.product-content p em {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0086a3;
+}
+.product-content p i {
+  display: inline-block;
+  padding: 3px 14px;
+  margin-right: 10px;
+  color: #fff;
+  background: #0086a3;
+  border-radius: 20px;
 }
 .product-photo {
   position: relative;
