@@ -575,6 +575,7 @@ a {
   right: 40px;
   font-size: 18px;
   color: #fff;
+  opacity: .6;
 }
 .about-info li {
   margin: 10px;
