@@ -26,7 +26,9 @@ a {
   position: relative;
   z-index: 1;
   height: 68px;
+  background: #fff;
   box-shadow: 0 1px 30px 0 #333;
+  opacity: .9;
 }
 .header-logo {
   position: absolute;
@@ -67,6 +69,12 @@ a {
 }
 .menus li:hover:before {
   width: 100%;
+}
+.menus li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #333;
 }
 .slider {
   position: relative;
@@ -599,7 +607,30 @@ a {
 }
 .product-content {
   line-height: 1.7;
-  text-indent: 2em;
+}
+.product-content p {
+  margin: 5px;
+}
+.product-content p span {
+  display: inline-block;
+  width: 100px;
+  padding-right: 10px;
+  margin-right: 10px;
+  text-align: right;
+  border-right: 1px solid #0086a3;
+}
+.product-content p em {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0086a3;
+}
+.product-content p i {
+  display: inline-block;
+  padding: 3px 14px;
+  margin-right: 10px;
+  color: #fff;
+  background: #0086a3;
+  border-radius: 20px;
 }
 .product-photo {
   position: relative;
@@ -629,4 +660,46 @@ a {
 }
 .product-photo .flickity-page-dots {
   bottom: -15px;
+}
+/* 相册 */
+.photos-area {
+  margin-bottom: 64px;
+}
+.photos-box {
+  width: 560px;
+  padding: 12px;
+  margin: 64px 18px 0;
+  background: #ddd;
+  background: rgba(199, 199, 199, .7);
+  border-radius: 30px;
+  box-shadow: inset 0 0 6px #999;
+}
+.photos-box a {
+  display: block;
+  float: left;
+  width: 114px;
+  height: 114px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px #333;
+}
+.photos-box a img {
+  height: 120px;
+}
+.photos-r {
+  width: 428px;
+}
+.photos-head {
+  margin: 10px;
+  text-align: center;
+}
+.photos-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: url(../images/photos/photo-bg.jpg) right;
+  background-size: cover;
 }
